@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "aab3bd9b-8db7-4112-846b-bf979ea0358c",
+		"name": "Indicadores Acumulados - Calculadora",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Categorias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hash\":\"9ce156515121271f76209dfb0f529186\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.lefisc.com.br/api/indicadores/listarCategorias",
+					"protocol": "https",
+					"host": [
+						"www",
+						"lefisc",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"indicadores",
+						"listarCategorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hash\":\"9ce156515121271f76209dfb0f529186\",\r\n    \"dataInicio\":\"01/01/2000\",\r\n    \"dataFim\":\"01/07/2021\",\r\n    \"valor\":\"100.00\",\r\n    \"id\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.lefisc.com.br/api/indicadores/calcular",
+					"protocol": "https",
+					"host": [
+						"www",
+						"lefisc",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"indicadores",
+						"calcular"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

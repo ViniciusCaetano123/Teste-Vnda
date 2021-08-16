@@ -1,0 +1,557 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    scroll-margin-top: 180px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-size: 1em;
+}
+main{
+    padding-top:70px;
+}
+.pesquisar{
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    top:0px;
+    background-color: hsl(0deg 0% 0% / 50%);
+}
+.pesquisar form{
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+.pesquisar form input{
+    background: none;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    color: #ffff;
+    padding-bottom: 10px;
+    padding-right: 110px;
+}
+.pesquisar form span{
+position: absolute;
+    color: #fff;
+    font-weight: 600;
+    right: 0px;
+    cursor: pointer;
+   
+}
+.pesquisar img{
+    position: absolute;
+    top:70px;
+    right: 100px;
+    cursor: pointer;
+}
+footer{    color: #696969;
+    font-size: 14px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#menu6{
+    max-width: 1200px;   
+    width: 100%;
+    margin-top:90px;
+}
+section#menu6 .divisao-logo{
+    display: flex;
+    align-items: center;
+}
+section#menu6 .divisao-logo .linha{
+    width: 100%;
+    height: 1px;
+    background: rgb(213, 213, 213);
+}
+section#menu6 .divisao-logo span{
+    margin:0px 15px;   
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    ;
+}
+section#menu6 .footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+section#menu6 .footer-menu .footer-item:nth-child(2){
+    width: 100%;
+    max-width: 400px;
+}
+section#menu6 .footer-menu .footer-item:nth-child(1) ul a:nth-child(2){
+    margin-left: 10px;
+
+}
+section#menu6 .footer-menu h4{
+    margin-bottom:30px;
+}
+section#menu6 .footer-menu form {
+    position: relative;
+}
+section#menu6 .footer-menu form input {
+    width: 100%;
+    padding-bottom: 10px;
+}
+section#menu6 .footer-menu form span{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #696969;
+}
+section#menu6 .footer-menu form input{
+    border-bottom: 1px solid rgb(87, 87, 87);
+    width: 100%;
+    max-width: 600px;    
+    padding-right: 70px;
+}section#menu6 .footer-menu ul{
+    margin-top:10px;
+}
+section#menu6 .footer-menu ul a{
+    font-size: 14px;
+    color: #696969;
+}
+section#menu6 .footer-menu .redes ul{
+    display: flex;
+    flex-direction: column;
+}
+section#menu6 .footer-menu .redes ul a{
+    display: flex;
+    align-items: center;
+}
+section#menu6 .footer-menu .redes ul a img{
+    margin-right: 10px;
+}
+section#menu5{
+    max-width: 1200px;
+    padding:40px;
+    width: 100%;
+    position: relative;
+    margin-top:90px;
+}
+section#menu5 h2{
+    text-align: center;
+}
+section#menu5 .lista-instagram{
+    display: flex;
+    justify-content: space-between; 
+}
+section#menu5 .lista-instagram .item-instagram{
+    width: 300px;
+    height: 300px;   
+    position: relative;
+    cursor: pointer;
+}
+section#menu5 .lista-instagram .item-instagram:nth-child(2){
+    margin-top:90px;
+}
+section#menu5 .lista-instagram .item-instagram:hover .foto{
+    transform: rotatey(160deg);
+}
+section#menu5 .lista-instagram .item-instagram:hover .descricao{
+    transform: rotatey(0deg);
+    z-index: 3; 
+}
+section#menu5 .lista-instagram .item-instagram .foto{
+    position: relative;
+    transition: 0.5s all;
+    transform: rotatey(0deg);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    left: 0px;         
+}
+section#menu5 .lista-instagram .item-instagram .foto img{
+    border-radius: 5px;
+}
+
+section#menu5 .lista-instagram .item-instagram .descricao{
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    z-index: 1;   
+    border-radius: 5px;
+    transform: rotatey(180deg);
+    transition: 0.5s all;
+    background: #ABA8B2;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+section#menu4{    
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+section#menu4 .backgroundMenu4{
+    background: #ABA8B2;
+    position: absolute;
+    max-width: 1000px;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+section#menu4  .item-atual{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+}
+section#menu4  .item-atual img{
+    border-radius: 5px;
+}
+section#menu4 .menu4{
+    padding:40px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+section#menu4 .menu4 .item-atual .conteudo{
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+section#menu4 div.swiper-container {
+   width:100%;   
+   max-width: 400px;
+    height: 300px;  
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 5px;    
+    overflow: hidden;
+    position: relative;
+}
+section#menu4  div.swiper-slide{
+    height: 100%;
+    background: #fff;
+    text-align: center;  
+}
+section#menu4  div.swiper-slide img{
+    width: 400px;
+    height: 300px;
+}
+section#menu4 div.item-atual button{
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;   
+    background: chocolate;
+}
+section#menu4 div.item-atual button:hover{
+    background: rgb(201, 127, 74);
+}
+/* ------ section 3 ---------*/
+
+.backgroundMenu3{
+    height: 50vh;
+    width: 100%; 
+    position: absolute;
+    background: #ABA8B2;
+}
+.backgroundMenu3 img{
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+}
+section#menu3 .menu3{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px;
+    padding-top:80px;
+}   
+section#menu3 .descricao{
+    max-width: 300px;
+}
+section#menu3 .lista-item{
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+}
+section#menu3 .lista-item h4{
+    text-align: center;
+}
+section#menu3 .lista-item .card-item{
+    width: 300px;   
+    border-radius: 10px;
+    background: #fff;
+    max-height: 480px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+section#menu3 .lista-item .card-item div{
+    padding:15px;
+}
+section#menu3 .lista-item .card-item div p{
+    text-align: center;
+}
+section#menu3 .lista-item .card-item img{
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* ----X--------------X-----*/
+[cima]{
+    transform: rotate(90deg);
+    bottom: -49px;
+    left: 50px;
+}
+[baixo]{
+    transform: rotate(270deg);
+    top: -51px;
+    left: 50px;
+}
+[esquerdo]{
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid #ABA8B2;
+    border-top-right-radius: 126px;  
+    border-bottom-right-radius: 126px;
+}
+[direito]{
+    transform: rotate(180deg);
+    top: -1px;
+    left: 0px;
+}
+section{
+    max-width: 1200px;
+    margin:0 auto;    
+}
+section#menu1{
+    height: 90vh;
+}
+section#menu1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+section#menu2{
+    height: 35vh;
+    overflow: hidden;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section#menu2 .pizzas .pizza-item{
+    position: relative;
+    width: 200px;
+    height: 200px;  
+}
+section#menu2 .swiper-container {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+}
+ div.swiper-button{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    z-index: 10;
+    width: 53px;
+    height: 53px;
+    background: #fff;
+    color: chocolate;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+section#menu2 .swiper-container {
+    width: 100%;
+    height: 200px;
+}
+section#menu2  .swiper-slide{
+    width: 300px;
+}
+section#menu2 .pizzas .pizza-item  div{
+    position: absolute;
+}
+header{
+    transition: 0.5s all;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    position: fixed;
+    background:#fff;
+    z-index: 9999;
+}
+header.diminuir{
+    height: 60px;   
+    transition: 0.5 all; 
+}
+header.diminuir nav ul li a{
+    font-size: 0.8;
+   
+}
+header .container{
+    max-width: 1200px;
+    margin:0 auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5 all;
+}
+header .container .logo{
+    font-weight: 600;
+    font-size: 1.8em;
+    color:#383838;
+}
+header .container .icones{
+    display: flex;
+    align-items: center;
+}
+header .container .icones img{
+    cursor: pointer;
+}
+header .container .icones img:nth-child(3){
+    margin:0px 7px;
+}
+header .container .icones .menu-h-e{
+    display: none;
+}
+
+header .container nav ul{
+    display: flex;
+}
+header .container nav ul li a{
+    color:#383838;
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 1em;
+    display: block;
+    padding: 14px 15px;
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+header .container nav ul li a.active,
+header .container nav ul li a:hover{
+    background: chocolate;
+}
+header .container nav ul lia .active ,
+header .container nav ul li a:hover {
+    color: #fff;
+}
+@media (max-width:500px) {
+    section#menu4 .item-atual img{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    body{
+        font-size: 0.8em;
+    }
+    header nav{
+        position: absolute;
+        top:101%;
+        left: -100%;
+        width: 100%;
+        background: #fff;
+        transition: 0.5s all;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    }
+    header nav ul li{
+        margin-top:10px
+    }  
+    header .container .icones .menu-h-e{
+        margin-right: 20px;
+        cursor: pointer;
+        display: initial;
+    }
+    section#menu1{
+        padding:0px
+    }
+    section#menu2{
+        max-width: 650px;
+    }
+    section#menu3 .menu3{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#menu3 .lista-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#menu3 .lista-item .card-item{
+        margin-bottom: 30px;
+    }
+    .backgroundMenu3 img{
+        display: none;
+    }
+    section#menu4 .menu4{
+        flex-direction: column;
+    }
+    section#menu4 .item-atual{
+        max-width: 100%;
+        margin-bottom: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+    section#menu4 .menu4 .item-atual .conteudo{
+        text-align: center;
+        margin-top: 10px;
+    }
+    section#menu5 .lista-instagram{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#menu5 .lista-instagram .item-instagram:nth-child(2){
+        margin-top:40px;
+    }
+    section#menu5 .lista-instagram .item-instagram{
+        margin-top:40px;
+    }
+    section#menu6 .footer-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    section#menu6 .footer-menu .footer-item:nth-child(2),.footer-item:nth-child(3){
+        margin-top:30px;
+    }
+    .pesquisar{
+        padding:20px;
+    }
+    .pesquisar img{
+        right: 10px;
+    }
+}
